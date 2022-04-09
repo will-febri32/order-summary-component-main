@@ -45,6 +45,9 @@ main {
 .card {
     background-color: #fff;
     border-radius: 12px;
+    box-shadow: 0px 24px 38px 3px rgba(31, 46, 85, 0.14), 
+        0px 9px 46px 8px rgba(31, 46, 85, 0.12), 
+        0px 11px 15px -7px rgba(31, 46, 85, 0.2);
     max-width: var(--card-max-width);
     overflow: hidden;
     width: 100%;
@@ -93,6 +96,14 @@ main {
     margin-bottom: 24px;
 }
 
+.plan > .change {
+    color: hsl(245, 75%, 52%)
+}
+
+.plan > .change:hover {
+    color: hsl(224, 23%, 55%)
+}
+
 .plan > .icon {
     height: 40px;
     padding-right: 18px;
@@ -108,6 +119,7 @@ main {
 
 .cancel {
     color: #777;    
+    transition: color 250ms ease;
 }
 
 .cancel:hover {
@@ -118,6 +130,7 @@ main {
     background-color: hsl(245, 75%, 52%);
     color: #fff;
     margin-bottom: 8px;
+    transition: background-color 250ms ease;
 }
 
 .submit:hover {
