@@ -1,144 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 :root {
-    --card-max-width: 400px;
+  --card-max-width: 450px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: hsl(225, 100%, 94%);
-    background-image: url('./images/pattern-background-desktop.svg');
-    background-position-x: center;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: contain; 
-    color: #303642;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 22px;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #303642;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 main {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 24px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0px 24px 38px 3px rgba(31, 46, 85, 0.14), 
-        0px 9px 46px 8px rgba(31, 46, 85, 0.12), 
-        0px 11px 15px -7px rgba(31, 46, 85, 0.2);
-    max-width: var(--card-max-width);
-    overflow: hidden;
-    width: 100%;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0px 24px 38px 3px rgba(49, 100, 234, 0.14),
+    0px 9px 46px 8px rgba(150, 176, 244, 0.12),
+    0px 11px 15px -7px rgba(216, 224, 247, 0.2);
+  max-width: var(--card-max-width);
+  overflow: hidden;
+  width: 100%;
 }
 
 .content {
-    padding: 24px 48px;
+  padding: 48px 48px 36px 48px;
 }
 
 .content > h1 {
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 30px;
-    margin-bottom: 8px;
-    text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 34px;
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 .content > p {
-    color: #999;
-    margin-bottom: 24px;
-    text-align: center;
+  color: #999;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .info {
-    flex: 1;
+  flex: 1;
 }
 
 .info > .price {
-    color: #999;
+  color: #999;
 }
 
 .info > .title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
+  font-weight: 700;
 }
 
 .plan {
-    align-items: center;
-    display: flex;
-    margin-bottom: 24px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 38px;
+  padding: 0 18px;
 }
 
 .plan > .change {
-    color: hsl(245, 75%, 52%)
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
 }
 
 .plan > .change:hover {
-    color: hsl(224, 23%, 55%)
+  color: hsl(224, 23%, 55%);
 }
 
 .plan > .icon {
-    height: 40px;
-    padding-right: 18px;
+  padding-right: 18px;
 }
 
-.btn {
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 700;
-    padding: 10px;
-    text-align: center;
+.cancel,
+.submit {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px;
+  text-align: center;
+  width: 100%;
 }
 
 .cancel {
-    color: #777;    
-    transition: color 250ms ease;
+  color: #777;
+  transition: color 250ms ease;
 }
 
 .cancel:hover {
-    color: #303642;
+  background-color: #fff;
+  color: #303642;
 }
 
 .submit {
-    background-color: hsl(245, 75%, 52%);
-    color: #fff;
-    margin-bottom: 8px;
-    transition: background-color 250ms ease;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  margin-bottom: 12px;
+  transition: background-color 250ms ease;
 }
 
 .submit:hover {
-    background-color: hsl(224, 23%, 55%);
+  background-color: hsl(224, 23%, 55%);
 }
 
 @media (max-width: 375.99px) {
-    body {
-        background-image: url('./images/pattern-background-mobile.svg');
-    }
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
 }
